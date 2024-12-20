@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: gray;
+    padding: 20px;
+    height: 60vh;
+
+    /*GRID*/
+    display: grid;
+    /* grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px); */
+
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); */
+
+    /* grid-template-columns:[start] 100px 100px 100px [end];
+    grid-template-rows: repeat(3, 1fr); */
+    
+    /* grid-template-columns: 1fr minmax(200px, 1fr) 1fr;
+    grid-template-rows: repeat(3, 1fr); */
+
+    /* grid-template-columns: repeat(auto-fit, 200px);
+    grid-template-rows: repeat(3,100px); */
+
+    grid-template-columns: repeat(5,100px);
+    grid-template-rows: repeat(5,100px); 
+
+    /* justify-content: center; */
+    /* align-items: center; */
+
+    grid-template-areas: 
+    "header header header header header"
+    "main   main   main   main   main"
+    "nav    nav    .      aside  aside"
+    "foot   foot   foot   foot   foot"
+    ;
+    
+    gap: 20px;
+}
+
+.s{
+    padding: 20px;
+    background-color: rgb(84, 84, 84);
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+}
+
+header{
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+
+    /* grid-column: 1 / 3;
+    grid-row: 1 / 3; */
+
+    /* grid-column: start / end; */
+
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+nav{
+    grid-area: nav;
+}
+
+aside{
+    grid-area: aside;
+}
+
+footer{
+    grid-area: foot;
+}
+
+/*CALC()*/
+
+.container-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: calc(10px * 2);
+}
+
+.div1{
+    background-color: rgb(84, 84, 84);
+    width: calc(100px + 100px);
+    height: calc(100px - 50px);
+}
+
+/*Blending mode*/
+/*selects the img{
+    mix-blend-mode: normal | multiply | blue | darken
+    can use with linear-gradients
+}*/
+
+/*IS()*/
+/* header:is(h1, h2, h3){
+    color: #e0f337;
+}
+
+:is(section, article, aside, nav):is(h1,h2,h3,h4,h5,h6){
+    color: #e0f337;
+} */
+
+/*::before*/
+
+.div-content-beforeAfter::before{
+    content: "::before";
+    background-color: red;
+    font-size: 20px;
+    color: white;
+    font-weight: 800;
+}
+
+/*after*/
+.div-content-beforeAfter::after{
+    content: "::after";
+    background: red;
+    font-size: 20px;
+    color: white;
+    font-weight: 800;
+}
+
+/*:not*/
+/*.class:not(classe que deseja excluir){}*/

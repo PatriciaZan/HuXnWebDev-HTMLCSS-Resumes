@@ -1,0 +1,99 @@
+:root{
+    --color:#e0f337;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > div{
+    width: 300px;
+    height: 300px;
+    background-color: var(--color);
+    /*transform: translateY(200px); -200px moves to top*/
+    /*transform: translateX(100px);  */
+    /*transform: translate(100px, 200px); /*(X, Y)*/
+    /*transform: rotate(20deg); */
+    /*transform: scale(2); /*2x the original size (X, Y)*/
+    /* transform: skew(50deg); */
+}
+
+.container > a{
+    text-decoration: none;
+    border: 2px solid var(--color);
+    padding: 10px 20px;
+    color: black;
+    font-weight: 800;
+
+    /*transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: ease-out;*/
+
+    transition: all .5s ease-out;
+
+}
+
+.container > a:hover{
+    background-color: var(--color);
+}
+
+/*ANIMATION*/
+.container2{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.div2{
+    width: 300px;
+    height: 300px;
+    background-color: var(--color);
+
+    animation-name: AnimationName;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes AnimationName {
+    0% {
+        transform: scale(2);
+    }
+
+    25%{
+        transform: scale(0.2);
+        background-color: teal;
+        transform: skew(10deg);
+    }
+
+    50%{
+        background-color: var(--color);
+        transform: skew(40deg);
+        border-radius: 50%;
+
+    }
+}
+
+body{
+    background-color: gray;
+    font-size: 5rem;
+}
+
+@media screen and (max-width: 1000px){
+    body{
+        background-color: coral;
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    body{
+        background-color: var(--color);
+        font-size: 5rem;
+    }
+}

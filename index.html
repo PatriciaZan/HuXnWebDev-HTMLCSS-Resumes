@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS resume</title>
+    <link rel="stylesheet" href="./styles/external.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /*Internal CSS*/
+        /*
+        selector{
+            property: value;
+        }
+        .class
+        #id
+        */
+        h2{
+            color: blue;
+        }
+    </style>
+
+</head>
+<body>
+    <!--
+    <h1 style="color: red">inline CSS</h1>
+    <h2>Internal CSS</h2>
+    <h3>External CSS</h3>
+-->
+<div class="color">
+    <h1>Colors</h1>
+    <div class="div-rgb">RGB Color <br> rgb(255, 99, 71)</div>
+    <div class="div-rgba">RGBA Color <br>rgba(33, 126, 212, 0.5)</div>
+    <div class="div-hex">HEX Color <br> #e0f337</div>
+    <div class="div-hsl">HSL Color <br> hsl(142, 49%, 55%)</div>
+</div>
+
+<div class="div-lenght">
+    <h1>Lengths</h1>
+    <div class="div-lenght-absolute">
+        <p>Absolute Lengths will appear as exactly the size given.</p>
+        <ul>
+            <li>Pixels</li>
+        </ul>
+
+        <p>Relative lengths will scale between different renderings</p>
+        <ul>
+            <li>em</li>
+            <li>rem</li>
+            <li>vh</li>
+            <li>vw</li>
+            <li>% - Relative to it's parent element</li>
+        </ul>
+    </div>
+</div>
+
+<div class="div-typo">
+    <h1>Typography</h1>
+    <ul>
+        <li>font-family</li>
+        <li>font-size</li>
+        <li>font-weight</li>
+        <li>text-transform</li>
+        <li>text-aline</li>
+        <li>line-height</li>
+    </ul>
+</div>
+
+<div class="div-box">
+    <h1>Box</h1>
+    <p>Content, padding, border and margin</p>
+    <p>Background -color -image -repeat -size -position -attachment</p>
+</div>
+
+<div>
+    <h1>Gradients</h1>
+    <div class="div-grad"></div>
+    <h1>Filters</h1>
+    <p>filter: blur, constrat</p>
+</div>
+
+<div>
+    <h1>Selectors</h1>
+    <p>*{} selects all</p>
+    <p>div *{} selects all inside the div</p>
+    <p>div.text{} div with a class of text</p>
+    <p>div p{} selects the p inside the divs</p>
+    <p>div > p{} a p with a parent div</p>
+    <p>div + p{} a first p inide a div</p>
+    <p>a[href="one"] selects by attribute</p>
+</div>
+
+<div>
+    <h1>Sudo Selectors</h1>
+    <p class="hover">:hover</p>
+    <p class="active">:active</p>
+    <p class="link">:link</p>
+    <p class="after">::after</p>
+    <p class="before">::before</p>
+</div>
+
+<div>
+    <h1>Display</h1>
+    <p>Block takes the whole width</p>
+    <p>Inline takes the content space</p>
+    <p>inline-block</p>
+    <p>none removes the element</p>
+</div>
+
+<div>
+    <h1>Icons</h1>
+    <!--
+    https://fontawesome.com/
+    https://cdnjs.com/
+    -->
+    <i class="fa-solid fa-code icon-color"></i>
+</div>
+
+<div>
+    <h1>Shadows</h1>
+    <p>box-shadow</p>
+    <p>x , y , blurness, color</p>
+    <div class="div-shadow"></div>
+    <p>text-shadow</p>
+</div>
+
+<div>
+    <h1>Inheritance</h1>
+    <p>style that applies to the element's decendant</p>
+    <p>Typography only</p>
+</div>
+
+<div>
+    <h1>Positions</h1>
+    <div class="div-position-container">
+        <div class="div-d div-one">relative -> still occupie space</div>
+        <div class="div-d div-two" >absolute -> leave the space</div>
+        <div class="div-d div-three">fixed</div>
+        <div class="div-d div-four">sticky</div>
+    </div>
+
+<div>
+
+</div>
+
+</div>
+</body>
+</html>
